@@ -1,0 +1,163 @@
+.footer {
+	padding: 45px 0 45px 0;
+	background: #2f324b;
+}
+.nav__footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo-footer {
+	position: relative;
+	margin-right: 19px;
+}
+
+.footer-logo::before {
+	position: absolute;
+	content: '';
+	width: 68px;
+	height: 68px;
+	border-radius: 50px;
+	background: #15a9cb;
+	left: 53px;
+	bottom: 37px;
+}
+
+/* Адаптация */
+@media (max-width: 1400px) {
+	.footer-logo {
+		display: flex;
+		align-items: center;
+	}
+	.footer-logo::before {
+		position: absolute;
+		content: '';
+		width: 68px;
+		height: 68px;
+		border-radius: 50px;
+		background: #15a9cb;
+		left: 128px;
+		bottom: 39px;
+	}
+}
+@media (max-width: 1200px) {
+	.footer-logo {
+		display: flex;
+		align-items: center;
+	}
+	.footer-logo::before {
+		position: absolute;
+		content: '';
+		width: 68px;
+		height: 68px;
+		border-radius: 50px;
+		background: #15a9cb;
+		left: 48px;
+		bottom: 39px;
+	}
+}
+@media (max-width: 1024px) {
+	.footer-logo::before {
+		position: absolute;
+		content: '';
+		width: 68px;
+		height: 68px;
+		border-radius: 50px;
+		background: #15a9cb;
+		left: 24px;
+		bottom: 37px;
+	}
+	.footer-text {
+		font-size: 12px;
+	}
+	.nav-name {
+		font-size: 12px;
+		opacity: 0.5;
+	}
+	.phone__link {
+		font-size: 21px;
+		margin-bottom: 4px;
+	}
+	.phone__text {
+		font-size: 13px;
+	}
+}
+
+@media (max-width: 480px) {
+	.footer {
+		padding: 30px 0;
+		background: #2f324b;
+	}
+	.logo-footer {
+		width: 38px;
+	}
+	.footer-logo::before {
+		position: absolute;
+		content: '';
+		width: 45px;
+		height: 45px;
+		border-radius: 50px;
+		background: #15a9cb;
+		left: 26px;
+		bottom: 27px;
+	}
+	.phone {
+		display: none;
+	}
+	.footer-text {
+		display: none;
+	}
+}
+@media (max-width: 320px) {
+	.footer-container {
+		padding: 0;
+	}
+	.footer {
+		padding-bottom: 0;
+	}
+	.nav__footer {
+		padding: 0 15px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.logo-footer {
+		width: 24px;
+	}
+	.footer-logo::before {
+		position: absolute;
+		content: '';
+		width: 30px;
+		height: 30px;
+		border-radius: 50px;
+		background: #15a9cb;
+		left: 12px;
+		bottom: 47px;
+	}
+	.footer-text {
+		display: block;
+		font-size: 8px;
+	}
+	.footer-logo {
+		display: flex;
+		margin-right: 19px;
+	}
+	.nav__footer {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.nav-name {
+		display: none;
+	}
+	.footer__name {
+		display: block;
+		text-align: center;
+		padding-top: 15px;
+		padding-bottom: 15px;
+		background: #2a2c3f;
+		font-size: 12px;
+		font-weight: 500;
+		opacity: 0.5;
+	}
+}

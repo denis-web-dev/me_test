@@ -1,0 +1,269 @@
+.header {
+	padding-top: 40px;
+	padding-bottom: 140px;
+	background-image: url(../img/header_bg-1.jpg);
+	min-height: 100vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.logo {
+	position: relative;
+}
+
+.logotip::before {
+	position: absolute;
+	content: '';
+	width: 68px;
+	height: 68px;
+	border-radius: 50px;
+	background: #15a9cb;
+	top: 26px;
+	left: 127px;
+}
+
+.nav__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.phone {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.phone__link {
+	font-size: 24px;
+}
+.phone__text {
+	font-size: 16px;
+	text-decoration: underline;
+	margin-top: 3px;
+}
+
+.home-block {
+	display: flex;
+	align-items: center;
+	text-align: center;
+	padding-bottom: 70px;
+}
+
+.home-block__title {
+	font-weight: 900;
+	font-size: 52px;
+	padding-top: 120px;
+	padding-bottom: 35px;
+
+	color: rgba(255, 255, 255, 0.8600000143051147);
+}
+.home-block__description {
+	font-weight: 400;
+	font-size: 22px;
+	line-height: 1.41;
+	margin-bottom: 90px;
+	opacity: 7;
+
+	color: rgba(255, 255, 255, 0.75);
+}
+.btn {
+	padding: 12px 48px;
+	border: 1px solid #15a9cb;
+	border-radius: 50px;
+	/* background: #15a9cb; */
+	background: none;
+	box-shadow: 0px 4px 25px rgba(21, 169, 203, 0.3);
+	font-size: 20px;
+	color: #fff;
+	transition: 0.8s;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+}
+.home-block__btn {
+	color: #fff;
+}
+.home-block__btn:hover {
+	color: #15a9cb;
+}
+.btn::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 0%;
+	background: #15a9cb;
+	z-index: -1;
+	transition: 0.8s;
+}
+.home-block__btn::before {
+	bottom: 0;
+	border-radius: 50% 50% 0 0;
+}
+.home-block__btn::before {
+	height: 180%;
+}
+.home-block__btn:hover::before {
+	height: 0%;
+}
+
+/* Адаптация */
+
+@media (max-width: 1024px) {
+	.header {
+		padding-top: 26px;
+		padding-bottom: 70px;
+	}
+	.logo {
+		width: 50px;
+	}
+	.logotip::before {
+		position: absolute;
+		content: '';
+		width: 60px;
+		height: 60px;
+		border-radius: 50px;
+		background: #15a9cb;
+		top: 14px;
+		left: 24px;
+	}
+	.phone__link {
+		font-size: 21px;
+	}
+	.phone__text {
+		font-size: 13px;
+	}
+
+	.home-block__title {
+		padding-top: 70px;
+		padding-bottom: 27px;
+		font-size: 40px;
+	}
+	.home-block__description {
+		font-size: 18px;
+		margin-bottom: 60px;
+	}
+	.home-block {
+		padding-bottom: 0;
+	}
+}
+
+@media (max-width: 768px) {
+	.header {
+		padding-bottom: 0px;
+	}
+	.logo {
+		width: 46px;
+	}
+	.logotip::before {
+		position: absolute;
+		content: '';
+		width: 56px;
+		height: 56px;
+		border-radius: 50px;
+		background: #15a9cb;
+		top: 14px;
+		left: 24px;
+	}
+	.phone__link {
+		font-size: 18px;
+	}
+	.phone__text {
+		font-size: 12px;
+	}
+	.home-block__title {
+		padding-top: 60px;
+		padding-bottom: 25px;
+		font-size: 30px;
+	}
+	.home-block__description {
+		font-size: 16px;
+		margin-bottom: 50px;
+	}
+}
+@media (max-width: 480px) {
+	.header {
+		padding-bottom: 0px;
+	}
+	.logo {
+		width: 40px;
+		height: 40px;
+	}
+	.logotip::before {
+		position: absolute;
+		content: '';
+		width: 50px;
+		height: 50px;
+		border-radius: 50px;
+		background: #15a9cb;
+		top: 18px;
+		left: 24px;
+	}
+	.phone__link {
+		display: none;
+	}
+	.phone__text {
+		display: none;
+	}
+	.phone-mobile {
+		display: block;
+	}
+	.phone-mobile__img {
+		width: 35px;
+		height: 35px;
+	}
+	.home-block__title {
+		padding-top: 60px;
+		padding-bottom: 25px;
+		font-size: 26px;
+	}
+	.home-block__btn {
+		font-size: 18px;
+		padding: 12px 44px;
+	}
+}
+@media (max-width: 320px) {
+	.container {
+		padding: 0 15px;
+	}
+	.header {
+		padding-top: 15px;
+		padding-bottom: 65px;
+	}
+	.logo {
+		width: 24px;
+	}
+	.logotip::before {
+		position: absolute;
+		content: '';
+		width: 30px;
+		height: 30px;
+		border-radius: 50px;
+		background: #15a9cb;
+		top: 18px;
+		left: 12px;
+	}
+	.phone__link {
+		display: none;
+	}
+	.phone__text {
+		display: none;
+	}
+	.phone-mobile {
+		display: block;
+	}
+	.home-block__title {
+		padding-top: 65px;
+		padding-bottom: 23px;
+		font-size: 20px;
+	}
+	.home-block__description {
+		font-size: 14px;
+		margin-bottom: 54px;
+	}
+	.home-block__btn {
+		font-size: 16px;
+		padding: 9px 29px;
+	}
+}

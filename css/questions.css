@@ -1,0 +1,164 @@
+.questions {
+	display: flex;
+
+	background-image: url(../img/contact_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.form__title {
+	font-weight: 700;
+	font-size: 35px;
+	line-height: 42px;
+	margin-bottom: 17px;
+}
+.form__description {
+	font-weight: 500;
+	font-size: 22px;
+	line-height: 26px;
+
+	color: rgba(255, 255, 255, 0.800000011920929);
+	margin-bottom: 50px;
+}
+.input-box {
+	display: flex;
+	flex-direction: column;
+	gap: 21px;
+	margin-bottom: 50px;
+}
+.input-item {
+	font-size: 22px;
+	font-weight: 400;
+	color: rgba(255, 255, 255, 0.5);
+	border-radius: 50px;
+	border: 1px solid #fff;
+	max-width: 423px;
+	padding: 9px 296px 9px 25px;
+	background: none;
+}
+
+.form-btn {
+	color: #fff;
+	margin-bottom: 50px;
+}
+.form-btn:hover {
+	color: #15a9cb;
+}
+.form-btn::before {
+	bottom: 0;
+	border-radius: 50% 50% 0 0;
+}
+.form-btn::before {
+	height: 180%;
+}
+.form-btn:hover::before {
+	height: 0%;
+}
+.form-approval {
+	font-size: 20px;
+	font-weight: 400;
+}
+.approval__link {
+	transition: 0.2s;
+}
+.approval__link:hover {
+	color: #4a76a8;
+	text-decoration: underline;
+}
+
+/* Адаптив */
+
+@media (max-width: 1024px) {
+	.form__title {
+		font-size: 32px;
+		margin-bottom: 16px;
+		font-weight: 700;
+	}
+	.form__description {
+		font-size: 20px;
+		font-weight: 500;
+	}
+	.input-item {
+		max-width: 377px;
+		font-size: 20px;
+		padding: 8px 234px 8px 23px;
+	}
+	.form-btn {
+		color: #fff;
+		margin-bottom: 30px;
+		padding: 11px 38px;
+		font-size: 20px;
+		font-weight: 500;
+	}
+	.form-approval {
+		font-size: 17px;
+	}
+}
+
+@media (max-width: 480px) {
+	.form__description {
+		font-size: 17px;
+		font-weight: 500;
+		margin-bottom: 40px;
+	}
+	.input-item {
+		max-width: 325px;
+		font-size: 18px;
+		padding: 9px 217px 9px 21px;
+	}
+	.input-box {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 30px;
+		gap: 16px;
+	}
+	.form-approval {
+		font-size: 16px;
+	}
+}
+@media (max-width: 320px) {
+	section:last-child {
+		padding-bottom: 30px;
+	}
+	.questions {
+		padding-top: 30px;
+		padding-bottom: 50px;
+	}
+	.form__title {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	.form__description {
+		font-size: 12px;
+		font-weight: 500;
+		margin-bottom: 35px;
+	}
+	.input-item {
+		font-weight: 400;
+		font-size: 14px;
+		max-width: 290px;
+		padding: 6px 205px 6px 18px;
+	}
+	.input-box {
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 45px;
+		gap: 15px;
+		font-weight: 400;
+		font-size: 14px;
+	}
+	.form-btn {
+		font-size: 16px;
+		padding: 10px 26px;
+		max-width: 174px;
+	}
+	.form-approval {
+		font-size: 11px;
+	}
+}
