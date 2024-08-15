@@ -1,26 +1,11 @@
 .header {
 	padding-top: 40px;
-	padding-bottom: 140px;
+	padding-bottom: 47px;
 	background-image: url(../img/header_bg-1.jpg);
 	min-height: 100vh;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-}
-
-.logo {
-	position: relative;
-}
-
-.logotip::before {
-	position: absolute;
-	content: '';
-	width: 68px;
-	height: 68px;
-	border-radius: 50px;
-	background: #15a9cb;
-	top: 26px;
-	left: 127px;
 }
 
 .nav__header {
@@ -44,10 +29,13 @@
 }
 
 .home-block {
+	padding-bottom: 70px;
+}
+.home-content {
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	padding-bottom: 70px;
 }
 
 .home-block__title {
@@ -59,6 +47,7 @@
 	color: rgba(255, 255, 255, 0.8600000143051147);
 }
 .home-block__description {
+	width: 960px;
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 1.41;
@@ -110,6 +99,65 @@
 
 /* Адаптация */
 
+@media (max-width: 1440px) {
+	.header {
+		padding-top: 26px;
+		padding-bottom: 70px;
+	}
+	.logo {
+		width: 50px;
+		padding-bottom: 4px;
+	}
+	.phone__link {
+		font-size: 21px;
+	}
+	.phone__text {
+		font-size: 13px;
+	}
+
+	.home-block__title {
+		padding-top: 70px;
+		padding-bottom: 27px;
+		font-size: 40px;
+	}
+	.home-block__description {
+		font-size: 18px;
+		margin-bottom: 60px;
+	}
+	.home-block {
+		padding-bottom: 0;
+	}
+}
+@media (max-width: 1400px) {
+	.header {
+		padding-top: 26px;
+		padding-bottom: 70px;
+	}
+	.logo {
+		width: 50px;
+		padding-bottom: 4px;
+	}
+
+	.phone__link {
+		font-size: 21px;
+	}
+	.phone__text {
+		font-size: 13px;
+	}
+
+	.home-block__title {
+		padding-top: 70px;
+		padding-bottom: 27px;
+		font-size: 40px;
+	}
+	.home-block__description {
+		font-size: 18px;
+		margin-bottom: 60px;
+	}
+	.home-block {
+		padding-bottom: 0;
+	}
+}
 @media (max-width: 1024px) {
 	.header {
 		padding-top: 26px;
@@ -117,16 +165,7 @@
 	}
 	.logo {
 		width: 50px;
-	}
-	.logotip::before {
-		position: absolute;
-		content: '';
-		width: 60px;
-		height: 60px;
-		border-radius: 50px;
-		background: #15a9cb;
-		top: 14px;
-		left: 24px;
+		padding-bottom: 4px;
 	}
 	.phone__link {
 		font-size: 21px;
@@ -156,16 +195,6 @@
 	.logo {
 		width: 46px;
 	}
-	.logotip::before {
-		position: absolute;
-		content: '';
-		width: 56px;
-		height: 56px;
-		border-radius: 50px;
-		background: #15a9cb;
-		top: 14px;
-		left: 24px;
-	}
 	.phone__link {
 		font-size: 18px;
 	}
@@ -189,16 +218,6 @@
 	.logo {
 		width: 40px;
 		height: 40px;
-	}
-	.logotip::before {
-		position: absolute;
-		content: '';
-		width: 50px;
-		height: 50px;
-		border-radius: 50px;
-		background: #15a9cb;
-		top: 18px;
-		left: 24px;
 	}
 	.phone__link {
 		display: none;
@@ -233,16 +252,6 @@
 	}
 	.logo {
 		width: 24px;
-	}
-	.logotip::before {
-		position: absolute;
-		content: '';
-		width: 30px;
-		height: 30px;
-		border-radius: 50px;
-		background: #15a9cb;
-		top: 18px;
-		left: 12px;
 	}
 	.phone__link {
 		display: none;
