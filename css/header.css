@@ -273,6 +273,7 @@ width:200px;
 		font-size: 20px;
 	}
 	.home-block__description {
+display:none;
 width:200px;
 		font-size: 14px;
 		margin-bottom: 54px;
